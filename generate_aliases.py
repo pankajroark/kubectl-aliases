@@ -48,7 +48,7 @@ def main():
         ]
 
     res = [
-        ('po', 'pods', ['g', 'd', 'rm'], None),
+        ('p', 'pods', ['g', 'd', 'rm'], None),
         ('dep', 'deployment', ['g', 'd', 'rm'], None),
         ('svc', 'service', ['g', 'd', 'rm'], None),
         ('ing', 'ingress', ['g', 'd', 'rm'], None),
@@ -56,6 +56,9 @@ def main():
         ('sec', 'secret', ['g', 'd', 'rm'], None),
         ('no', 'nodes', ['g', 'd'], ['sys']),
         ('ns', 'namespaces', ['g', 'd', 'rm'], ['sys']),
+        ('ks', 'ksvc', ['g', 'd', 'rm'], None),
+        ('t', 'tasks', ['g', 'd', 'rm'], None),
+        ('tr', 'taskruns', ['g', 'd', 'rm'], None),
         ]
     res_types = [r[0] for r in res]
 
